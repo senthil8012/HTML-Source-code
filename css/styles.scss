@@ -1,0 +1,54 @@
+// styles.scss
+$category-color:#0059bf;
+$heading-color:#000000;
+$content-color:#606669;
+$cat-size:18px;
+$heading-size:31px;
+$content-size:19px;
+
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+.container{
+  margin:0px auto;
+  border-collapse: collapse;
+  width:80%;
+}
+.container tr  {
+  border-bottom: 1px solid $content-color;
+}
+.container td{
+  padding:8px;
+}
+
+.container tr td h1{
+  font-size: $cat-size;
+  color:$category-color;
+  margin:0;
+  padding:0;
+}
+
+.container tr td h2{
+  font-size: $heading-size;
+  color:$heading-color;
+  margin:0;
+  padding:0;
+}
+
+.container tr td p{
+  font-size: $content-size;
+  color:$content-color;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .container tr {
+    display: grid;
+    text-align: center;
+  }
+  .container tr img{
+      width: 100%;
+  }
+}
